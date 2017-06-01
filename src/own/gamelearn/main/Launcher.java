@@ -1,5 +1,6 @@
 package own.gamelearn.main;
 
+import own.gamelearn.audio.OperationOne;
 import own.gamelearn.display.*;
 import own.gamelearn.thread.CallableTask;
 import own.gamelearn.thread.ReadFileTasks;
@@ -20,7 +21,8 @@ public class Launcher {
 //        new ScaleImage();
 //        new SafeKey();
 //        new CallableTask();
-        new ReadFileTasks();
+//        new ReadFileTasks();
+        new OperationOne();
     }
 
 
