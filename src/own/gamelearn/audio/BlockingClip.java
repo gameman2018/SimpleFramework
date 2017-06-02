@@ -23,6 +23,7 @@ public class BlockingClip extends AudioStream {
             ByteArrayInputStream in = new ByteArrayInputStream(soundData);
             AudioInputStream ais = AudioSystem.getAudioInputStream(in);
             clip = AudioSystem.getClip();
+            clip.addLineListener(this);
             clip.open(ais);
             while (!open){
                 condition.await();
@@ -100,9 +101,9 @@ public class BlockingClip extends AudioStream {
     }
 
     @Override
-    protected void fireTaskFinised() {
+    protected void fireTaskFinished() {
         if (!restart){
-            super.fireTaskFinised();
+            super.fireTaskFinished();
         }
     }
 

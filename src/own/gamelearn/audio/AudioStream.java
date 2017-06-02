@@ -37,7 +37,7 @@ public abstract class AudioStream implements LineListener {
         return listeners.add(listener);
     }
 
-    protected void fireTaskFinised(){
+    protected void fireTaskFinished(){
         synchronized (listeners){
             for (BlockingAudioListener listener : listeners){
                 listener.audioFinished();
@@ -64,7 +64,7 @@ public abstract class AudioStream implements LineListener {
             lock.unlock();
         }
         if (wasStarted && !started){
-            fireTaskFinised();
+            fireTaskFinished();
         }
     }
 }
