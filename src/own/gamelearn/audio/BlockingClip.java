@@ -28,6 +28,7 @@ public class BlockingClip extends AudioStream {
             while (!open){
                 condition.await();
             }
+            createControls(clip);
         } catch (UnsupportedAudioFileException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -50,6 +51,7 @@ public class BlockingClip extends AudioStream {
                 condition.await();
             }
             clip = null;
+            clearControls();
         } catch (InterruptedException e) {
             e.printStackTrace();
         } finally {
