@@ -25,7 +25,8 @@ public class Launcher {
 //        new ReadFileTasks();
 //        new OperationOne();
 //        new SoundPlayer();
-        new SoundControl();
+//        new SoundControl();
+        new BoungcingBall();
     }
 
 
