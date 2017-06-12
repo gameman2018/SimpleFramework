@@ -26,7 +26,8 @@ public class Launcher {
 //        new OperationOne();
 //        new SoundPlayer();
 //        new SoundControl();
-        new BoungcingBall();
+//        new BoungcingBall();
+        new LineRectIntersection();
     }
 
 

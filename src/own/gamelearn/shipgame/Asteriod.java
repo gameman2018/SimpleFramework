@@ -1,6 +1,6 @@
 package own.gamelearn.shipgame;
 
-import apple.laf.JRSUIConstants;
+
 import own.gamelearn.support.Matrix3x3f;
 import own.gamelearn.support.Utility;
 import own.gamelearn.support.Vector2f;

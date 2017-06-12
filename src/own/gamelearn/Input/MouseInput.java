@@ -17,7 +17,6 @@ public class MouseInput implements MouseListener, MouseMotionListener, MouseWhee
     }
 
     public synchronized void poll(){
-        curPos = new Point();
         for (int i = 0; i < BUTTONS.length; i++){
             if (STATES[i]){
                 BUTTONS[i]++;
