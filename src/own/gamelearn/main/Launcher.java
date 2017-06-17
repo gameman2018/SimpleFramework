@@ -27,8 +27,10 @@ public class Launcher {
 //        new SoundPlayer();
 //        new SoundControl();
 //        new BoungcingBall();
-        new LineRectIntersection();
+//        new LineRectIntersection();
+        new CircleLineIntersection();
     }
+
 
 
 }

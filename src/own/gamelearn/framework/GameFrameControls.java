@@ -7,6 +7,7 @@ import own.gamelearn.Input.SafeKeyboardInput;
 import own.gamelearn.support.Matrix3x3f;
 import own.gamelearn.support.RateCreator;
 import own.gamelearn.support.Utility;
+import own.gamelearn.support.Vector2f;
 
 import javax.swing.*;
 import java.awt.*;
@@ -160,6 +161,12 @@ public class GameFrameControls extends JFrame implements Runnable {
         g.setFont(appFontStyle);
         g.drawString(appRate.getRate(),20, 20);
     }
+
+    protected Vector2f getWorldMousePosition(){
+        Matrix3x3f view = getViewportReverseTransform();
+        return new Vector2f(view.mul(new Vector2f(appMouse.getCurPos().x, appMouse.getCurPos().y)));
+    }
+
     private void sleep(long sleep){
         try {
             Thread.sleep(sleep);
