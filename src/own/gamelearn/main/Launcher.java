@@ -28,7 +28,9 @@ public class Launcher {
 //        new SoundControl();
 //        new BoungcingBall();
 //        new LineRectIntersection();
-        new CircleLineIntersection();
+//        new CircleLineIntersection();
+//        new ReflectionVector();
+        new BouncingPoint();
     }
 
 
